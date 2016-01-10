@@ -1,10 +1,13 @@
-#Ruby racer runner
-die = Die.new
-car_a = Car.new
-car_b = Car.new
-track_a = Track.new
-track_b = Track.new
+#Ruby Racer runner file
+require_relative 'game'
 
-race = Game.new({number_of_cars:3, track_length: 20, die_sides: 8})
 
-print = View.new(race)
+race = Game.new({num_of_cars: 40, track_length: 80, die_sides:10})
+
+view = race.view
+view.race_starter
+winner = race.round
+puts "in turn #{race.counter}"
+
+view.end_game(winner)
+
