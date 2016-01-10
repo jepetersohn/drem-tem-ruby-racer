@@ -3,6 +3,14 @@ class Car
   def initialize
     @position = 0
     @winner = false
-    @name = name
+    @name = name_gen
   end
+
+  def name_gen
+    name_bank = ['😊', '❤️', '😬', '😐', '👻', '💀', '💩', '👽', '🐨', '🐲', '⛄️', '🐙', '🎍', '🍳', '🍑', '🍕', '👾', '💉', '🔪']
+    return name_bank.sample
+  end
+
 end
+
+

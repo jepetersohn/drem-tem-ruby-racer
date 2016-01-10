@@ -40,9 +40,16 @@ describe 'Ruby Racer' do
 
   describe 'game' do
     let(:test_game){Game.new}
-    it 'can tell if game is finished' do
-      expect()
+
+    it 'can advance a round in the game' do
+      test_game.round
     end
+
+    # it 'can tell if game is finished' do
+    #   expect()
+    # end
+
+
   end
 end
 
